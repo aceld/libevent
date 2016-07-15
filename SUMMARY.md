@@ -10,7 +10,7 @@
    * [2.5 触发模式](25hong_fa_mo_5f0f_md.md)
    * [2.6 简单的epoll服务器](26-简单的epoll服务器.md)
 * [3 epoll和reactor](3-epoll和reactor.md)
-* [4 libevent和常用类型](4-libevent简单服务器.md)
+* [4 libevent常用设置](4-libevent简单服务器.md)
 * [5 libevent编程API](5-libevent编程api.md)
 * [6 libevent简单的服务器](6-libevent.md)
 
