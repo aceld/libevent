@@ -39,3 +39,28 @@ make
 sudo make install
 ```
 
+
+#1.3 libevent开源包
+
+在`.libs`隐藏文件中包含全部libevent已经编译好的so文件。
+
+其中core为libevent的核心文件，libevent.so为主链接文件，会关联到其他全部so文件。
+
+
+在sample目录下会有已经编译好的服务器应用程序。
+
+可以拿`hello-world`程序用来测试。
+
+服务端:
+
+```bash
+./hello-world
+```
+
+客户端:
+
+```bash
+netcat 192.168.2.105 9995
+```
+
+如果客户端收到“hello world”字符串，表示libevent在本机可以正常使用。
