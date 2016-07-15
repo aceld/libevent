@@ -120,16 +120,16 @@ int main(int argc, char **argv)
                     memset(buffer, 0, BUFFER_MAX_LEN);
 #endif
 
-#if 0
+/*
                     event.events = EPOLLOUT;
                     event.data.fd = client_fd;
                     epoll_ctl(epfd, EPOLL_CTL_MOD, client_fd, &event);
-#endif
+*/
                 }
             }
             else if (my_events[i].events & EPOLLOUT) {
                 printf("EPOLLOUT\n");
-#if 0
+/*
                 client_fd = my_events[i].data.fd;
                 str_toupper(buffer);
                 write(client_fd, buffer, strlen(buffer));
@@ -139,7 +139,7 @@ int main(int argc, char **argv)
                 event.events = EPOLLIN;
                 event.data.fd = client_fd;
                 epoll_ctl(epfd, EPOLL_CTL_MOD, client_fd, &event);
-#endif
+*/
             }
         }
     }
