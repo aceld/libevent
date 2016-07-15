@@ -13,8 +13,21 @@ libevent版本一共有1.4系列和2.0系列两个稳定版本。
 需要注意的是，1.4系列和2.0系列两个版本的接口并不兼容，就是2.0将一些接口的原型发>生了改变，所以将1.4升级到2.0需要重新编码。
 
 
-#1.1 libevent下载
+#1.1 libevent下载与安装
 
 
+在官网上找到`libevent-2.0.22-stable.tar.gz`下载地址。
 
+```bash
+
+tar -zxvf libevent-2.0.22-stable.tar.gz
+
+cd libevent-2.0.22-stable/
+
+./configure
+
+make
+
+sudo make install
+```
 
