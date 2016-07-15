@@ -1,6 +1,6 @@
 # 1 Libevent官方
 
- * 官方网站：http:\/\/libevent.org\/ 
+ * 官方网站：http://libevent.org/ 
 
 libevent版本一共有1.4系列和2.0系列两个稳定版本。
 
