@@ -1,6 +1,6 @@
 # Libevent
 
-本教程要求有一定的服务并发编程基础，了解select和epoll等多路I\\/O复用机制。
+本教程要求有一定的服务并发编程基础，了解select和epoll等多路I\/O复用机制。
 
 
 
