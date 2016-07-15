@@ -7,7 +7,7 @@
     * [2.2 解决阻塞死等待的办法](21-解决阻塞死等待的办法.md)
     * [2.3 什么是epoll](23-什么是epoll.md)
     * 2.4 epollAPI
-    * 2.5 触发模式
+    * [2.5 触发模式](25-触发模式.md)
     * [2.6 简单的epoll服务器](26-简单的epoll服务器.md)
 * [3 epoll和reactor](3-epoll和reactor.md)
 * [4 libevent和常用类型](4-libevent简单服务器.md)
