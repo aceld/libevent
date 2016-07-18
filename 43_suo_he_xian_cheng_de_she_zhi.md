@@ -139,4 +139,18 @@ vthread_condition_callbacks 结构体描述了与条件变量相关的回调函�
 
 ### 实例：
 
+```cpp
+关于使用这些函数的示例,
 
+请查看 Libevent 源代码发布版本中的 
+evthread_pthread.c 和 evthread_win32.c 文件。
+```
+
+
+这些函数在 <event2/thread.h> 中声明,其中大多数在 2.0.4-alpha 版本中首次出现。 2.0.1-alpha 到2.0.3-alpha 使用较老版本的锁函数 。event_use_pthreads 函数要求程序链接 到 event_pthreads 库。
+
+
+条件变量函数是2.0.7-rc 版本新引入的,用于解决某些棘手的死锁问题。 
+
+可以创建禁止锁支持的libevent。这时候已创建的使用上述线程相关函数的程序将不能运
+行。
