@@ -15,7 +15,7 @@
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
    * [5.2 致命错误回调设置](42_zhi_ming_cuo_wu_hui_diao_she_zhi.md)
    * [5.3 内存管理回调设置](43_nei_cun_guan_li_hui_diao_she_zhi.md)
-   * [4.4 锁和线程的设置](43_suo_he_xian_cheng_de_she_zhi.md)
+   * [5.4 锁和线程的设置](43_suo_he_xian_cheng_de_she_zhi.md)
    * [4.5 调试事件的使用](45_diao_shi_shi_jian_de_shi_yong.md)
 * [6 libevent简单的服务器](6-libevent.md)
 
