@@ -157,3 +157,8 @@ libevent 也提供了一组方便使用的宏用于处理信号事件:
     event_pending((ev), (what), (tv_out))
 ```
 evsignal_*宏从2.0.1-alpha 版本开始存在。先前版本中这些宏叫做 signal_add()、signal_del ()等等。
+
+### 关于信号的警告
+
+在当前版本的 libevent 和大多数后端中,每个进程任何时刻只能有一个 event_base 可以监 听信号。如果同时向两个 event_base 添加信号事件,即使是不同的信号,也只有一 个 event_base 可以取得信号。
+kqueue 后端没有这个限制。
