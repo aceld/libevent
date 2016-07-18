@@ -36,6 +36,7 @@
    * [7.5 通用bufferevent操作](75_tong_yong_bufferevent_cao_zuo.md)
        * [7.5.1 释放bufferevent操作](751_shi_fang_bufferevent_cao_zuo.md)
        * [7.5.2 操作回调、水位和启用/禁用](752_cao_zuo_hui_diao_3001_shui_wei_he_qi_7528_jin_.md)
+       * 7.5.3 操作bufferevent中的数据
 * 8 链接监听器
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
