@@ -23,7 +23,7 @@
    * [5.3 转储event_base的状态](53_zhuan_chu_event_base_de_zhuang_tai.md)
 * [6 事件](6_shi_jian.md)
    * [6.1 创建事件](61_chuang_jian_shi_jian.md)
-   * 6.2 事件的未决和非未决
+   * [6.2 事件的未决和非未决](62_shi_jian_de_wei_jue_he_fei_wei_jue.md)
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
    * [5.2 致命错误回调设置](42_zhi_ming_cuo_wu_hui_diao_she_zhi.md)
