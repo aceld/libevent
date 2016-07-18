@@ -12,6 +12,7 @@
 * [3 epoll和reactor](3-epoll和reactor.md)
 * [4 event_base](5-libevent编程api.md)
    * [4.1 创建event_base](41_jian_li_mo_ren_de_event_base.md)
+   * 4.2 检查event_base后端
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
    * [5.2 致命错误回调设置](42_zhi_ming_cuo_wu_hui_diao_she_zhi.md)
