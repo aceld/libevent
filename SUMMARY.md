@@ -45,6 +45,7 @@
    * [8.3 检查evbuffer](83_jian_cha_evbuffer.md)
    * [8.4 向evbuffer添加数据](84_xiang_evbuffer_tian_jia_shu_ju.md)
    * [8.5 evbuffer数据移动](85_evbuffershu_ju_yi_dong.md)
+   * 8.6 添加数据到evbuffer前
 * 8 链接监听器
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
