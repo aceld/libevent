@@ -21,7 +21,7 @@
    * [5.1 运行循环](51_yun_xing_xun_huan.md)
    * [5.2 停止循环](52_ting_zhi_xun_huan.md)
    * [5.3 转储event_base的状态](53_zhuan_chu_event_base_de_zhuang_tai.md)
-* [6 事件](6_shi_jian.md)
+* [6 事件event](6_shi_jian.md)
    * [6.1 创建事件](61_chuang_jian_shi_jian.md)
    * [6.2 事件的未决和非未决](62_shi_jian_de_wei_jue_he_fei_wei_jue.md)
    * [6.3 事件的优先级](63_shi_jian_de_you_xian_ji.md)
