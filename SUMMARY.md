@@ -13,7 +13,7 @@
 * [4 event_base](5-libevent编程api.md)
    * [4.1 创建event_base](41_jian_li_mo_ren_de_event_base.md)
    * [4.2 检查event_base后端](42_jian_cha_event_base_hou_duan.md)
-   * 4.3 释放event_base
+   * [4.3 释放event_base](43_shi_fang_event_base.md)
    * 4.4 event_base优先级
    * 4.5 event_base和fork
 * [5 libevent常用设置](4-libevent简单服务器.md)
