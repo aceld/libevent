@@ -26,6 +26,7 @@
    * [6.2 事件的未决和非未决](62_shi_jian_de_wei_jue_he_fei_wei_jue.md)
    * [6.3 事件的优先级](63_shi_jian_de_you_xian_ji.md)
    * [6.4 检查事件状态](64_jian_cha_shi_jian_zhuang_tai.md)
+   * 6.5 一次触发事件
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
    * [5.2 致命错误回调设置](42_zhi_ming_cuo_wu_hui_diao_she_zhi.md)
