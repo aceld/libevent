@@ -42,6 +42,7 @@
 * [8 evBuffer](8_evbuffer.md)
    * [8.1 创建和释放evbuffer](81_chuang_jian_he_shi_fang_evbuffer.md)
    * [8.2 evbuffer与线程安全](82_evbufferyu_xian_cheng_an_quan.md)
+   * 8.3 检查evbuffer
 * 8 链接监听器
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
