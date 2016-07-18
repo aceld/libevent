@@ -33,6 +33,7 @@
    * [7.2 延迟回调](72_yan_chi_hui_diao.md)
    * [7.3 bufferevent 选项标志](73_bufferevent_xuan_xiang_biao_zhi.md)
    * [7.4 使用bufferevent](74_shi_yong_bufferevent.md)
+       * 7.5.5 bufferevent的清空操作
    * [7.5 通用bufferevent操作](75_tong_yong_bufferevent_cao_zuo.md)
        * [7.5.1 释放bufferevent操作](751_shi_fang_bufferevent_cao_zuo.md)
        * [7.5.2 操作回调、水位和启用/禁用](752_cao_zuo_hui_diao_3001_shui_wei_he_qi_7528_jin_.md)
