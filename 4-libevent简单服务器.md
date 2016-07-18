@@ -1,4 +1,4 @@
-#4 libevent常用设置
+#5 libevent常用设置
 
  
  libevent 有一些被整个进程共享的、影响整个库的全局设置。
