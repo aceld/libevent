@@ -52,11 +52,11 @@
    * [8.3 调整 evconnlistener 的回调函数](83_diao_zheng_evconnlistener_de_hui_diao_han_shu.md)
    * [8.4 检测 evconnlistener](84_jian_ce_evconnlistener.md)
    * [8.5 侦测错误](85_zhen_ce_cuo_wu.md)
-* 9 基于libevent服务器
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
    * [5.2 致命错误回调设置](42_zhi_ming_cuo_wu_hui_diao_she_zhi.md)
    * [5.3 内存管理回调设置](43_nei_cun_guan_li_hui_diao_she_zhi.md)
    * [5.4 锁和线程的设置](43_suo_he_xian_cheng_de_she_zhi.md)
    * [5.5 调试事件的使用](45_diao_shi_shi_jian_de_shi_yong.md)
+* 9 基于libevent服务器
 
