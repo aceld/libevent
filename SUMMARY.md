@@ -19,6 +19,7 @@
 * [6 libevent简单的服务器](6-libevent.md)
 * [5 event_loop事件循环](5_eventloop_shi_jian_xun_huan.md)
    * [5.1 运行循环](51_yun_xing_xun_huan.md)
+   * 5.2 停止循环
 * [6 事件](6_shi_jian.md)
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
