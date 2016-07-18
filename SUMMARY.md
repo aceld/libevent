@@ -29,6 +29,7 @@
    * [6.5 一次触发事件](65_yi_ci_hong_fa_shi_jian.md)
    * [6.6 手动激活事件](66_shou_dong_ji_huo_shi_jian.md)
 * [7 Bufferevent](7_bufferevent.md)
+   * 7.1 回调和水位
 * 8 链接监听器
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
