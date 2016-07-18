@@ -39,7 +39,7 @@
        * [7.5.3 操作bufferevent中的数据](753_cao_zuo_bufferevent_zhong_de_shu_ju.md)
        * [7.5.4 读写超时](754_du_xie_chao_shi.md)
        * [7.5.5 bufferevent的清空操作](755_buffereventde_qing_kong_cao_zuo.md)
-* [8 evBuffer](8_evbuffer.md)
+* [8 数据封装evBuffer](8_evbuffer.md)
    * [8.1 创建和释放evbuffer](81_chuang_jian_he_shi_fang_evbuffer.md)
    * [8.2 evbuffer与线程安全](82_evbufferyu_xian_cheng_an_quan.md)
    * [8.3 检查evbuffer](83_jian_cha_evbuffer.md)
