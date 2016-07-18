@@ -109,4 +109,51 @@ void main_loop(evutil_socket_t fd1, evutil_socket_t fd2)
 >这些标志定义在<event2/event.h>中。除了 EV_ET 在2.0.1-alpha 版本中引入外,所有标志 从1.0版本开始就存在了。
 
 
+## 6.1.3 关于事件持久性
 
+默认情况下,每当未决事件成为激活的(因为 fd 已经准备好读取或者写入,或者因为超时), 事件将在其回调被执行前成为非未决的。如果想让事件再次成为未决的 ,可以在回调函数中 再次对其调用 event_add()。
+
+
+然而,如果设置了 EV_PERSIST 标志,事件就是持久的。这意味着即使其回调被激活 ,事件还是会保持为未决状态 。如果想在回调中让事件成为非未决的 ,可以对其调用 event_del ()。
+
+每次执行事件回调的时候,持久事件的超时值会被复位。因此,如果具有 EV_READ|EV_PERSIST 标志,以及5秒的超时值,则事件将在以下情况下成为激活的:
+
+* 套接字已经准备好被读取的时候
+* 从最后一次成为激活的开始,已经逝去 5秒
+
+## 6.1.4 信号事件
+libevent 也可以监测 POSIX 风格的信号。要构造信号处理器,使用:
+
+```cpp
+#define evsignal_new(base, signum, cb, arg) \
+    event_new(base, signum, EV_SIGNAL|EV_PERSIST, cb, arg)
+```
+
+除了提供一个信号编号代替文件描述符之外,各个参数与 event_new()相同。
+
+
+###实例
+```cpp
+struct event *hup_event;
+struct event_base *base = event_base_new();
+
+/* call sighup_function on a HUP signal */
+hup_event = evsignal_new(base, SIGHUP, sighup_function, NULL);
+```
+
+>注意 :信号回调是信号发生后在事件循环中被执行的,所以可以安全地调用通常不能 在 POSIX 风格信号处理器中使用的函数。
+
+
+**`警告`:不要在信号事件上设置超时,这可能是不被支持的。 [待修正:真是这样的吗?]**
+
+libevent 也提供了一组方便使用的宏用于处理信号事件:
+
+```cpp
+#define evsignal_add(ev, tv) \
+    event_add((ev),(tv))
+#define evsignal_del(ev) \
+    event_del(ev)
+#define evsignal_pending(ev, what, tv_out) \
+    event_pending((ev), (what), (tv_out))
+```
+evsignal_*宏从2.0.1-alpha 版本开始存在。先前版本中这些宏叫做 signal_add()、signal_del ()等等。
