@@ -13,22 +13,3 @@ void bufferevent_free(struct bufferevent *bev);
 ## 7.5.2 操作回调、水位和启动/禁用
 
 
-```cpp
-typedef void (*bufferevent_data_cb)(struct bufferevent *bev, void *ctx);
-typedef void (*bufferevent_event_cb)(struct bufferevent *bev,
-    short events, void *ctx);
-
-void bufferevent_setcb(struct bufferevent *bufev,
-    bufferevent_data_cb readcb, bufferevent_data_cb writecb,
-    bufferevent_event_cb eventcb, void *cbarg);
-
-void bufferevent_getcb(struct bufferevent *bufev,
-    bufferevent_data_cb *readcb_ptr,
-    bufferevent_data_cb *writecb_ptr,
-    bufferevent_event_cb *eventcb_ptr,
-    void **cbarg_ptr);
-```
-
-bufferevent_setcb()函数修改 bufferevent 的一个或者多个回调 。readcb、writecb和eventcb函数将分别在已经读取足够的数据 、已经写入足够的数据 ,或者发生错误时被调用 。
-
-每个回调函数的第一个参数都是发生了事件的bufferevent ,最后一个参数都是调用bufferevent_setcb()时用户提供的 cbarg 参数:可以通过它向回调传递数据。事件回调 的 events 参数是一个表示事件标志的位掩码:请看前面的 “回调和水位”节。
