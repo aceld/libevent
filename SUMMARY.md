@@ -33,6 +33,7 @@
    * [7.2 延迟回调](72_yan_chi_hui_diao.md)
    * [7.3 bufferevent 选项标志](73_bufferevent_xuan_xiang_biao_zhi.md)
    * [7.4 使用bufferevent](74_shi_yong_bufferevent.md)
+   * 7.5 通用bufferevent操作
 * 8 链接监听器
 * [5 libevent常用设置](4-libevent简单服务器.md)
    * [5.1 日志消息回调设置](41_ri_zhi_xiao_xi_hui_diao_she_zhi.md)
