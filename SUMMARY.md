@@ -11,7 +11,7 @@
    * [2.6 简单的epoll服务器](26-简单的epoll服务器.md)
 * [3 epoll和reactor](3-epoll和reactor.md)
    * [3.1 reactor反应堆模式](31_reactorfan_ying_dui_mo_shi.md)
-   * 3.2 epoll的反应堆模式实现
+   * [3.2 epoll的反应堆模式实现](32_epollde_fan_ying_dui_mo_shi_shi_xian.md)
 * [4 event_base](5-libevent编程api.md)
    * [4.1 创建event_base](41_jian_li_mo_ren_de_event_base.md)
    * [4.2 检查event_base后端](42_jian_cha_event_base_hou_duan.md)
