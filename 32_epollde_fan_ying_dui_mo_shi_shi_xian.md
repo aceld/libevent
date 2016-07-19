@@ -1,5 +1,11 @@
 # 3.2 epoll的反应堆模式实现
 
+>epoll反应堆模式的实现-也就是libevent的实现原理。
+
+
+
+
+
 ```cpp
 /**
  * @brief epoll基于非阻塞I/O事件驱动
