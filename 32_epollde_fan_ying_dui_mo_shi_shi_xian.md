@@ -4,9 +4,8 @@
 
 
 ```go
-/**
- * @brief epoll基于非阻塞I/O事件驱动
- */
+#include <stdlib.h>
+#include <stdio.h> 
 #include <stdio.h>
 #include <sys/socket.h>
 #include <sys/epoll.h>
@@ -15,7 +14,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
-
+#include <time.h>
 #define MAX_EVENTS  1024
 #define BUFLEN 128
 #define SERV_PORT   8080
@@ -154,7 +153,7 @@ void recvdata(int fd, int events, void *arg)
     else if (len == 0) {
         close(ev->fd);
         /* ev-g_events 地址相减得到偏移元素位置 */
-        printf("[fd=%d] pos[%d], closed\n", fd, ev - g_events);
+        printf("[fd=%d] pos[%d], closed\n", fd, (int)(ev - g_events));
     }
     else {
         close(ev->fd);
@@ -196,14 +195,14 @@ void initlistensocket(int efd, short port)
 
     struct sockaddr_in sin;
 
-	memset(&sin, 0, sizeof(sin));
-	sin.sin_family = AF_INET;
-	sin.sin_addr.s_addr = INADDR_ANY;
-	sin.sin_port = htons(port);
+    memset(&sin, 0, sizeof(sin));
+    sin.sin_family = AF_INET;
+    sin.sin_addr.s_addr = INADDR_ANY;
+    sin.sin_port = htons(port);
 
-	bind(lfd, (struct sockaddr *)&sin, sizeof(sin));
+    bind(lfd, (struct sockaddr *)&sin, sizeof(sin));
 
-	listen(lfd, 20);
+    listen(lfd, 20);
 
     return;
 }
@@ -225,7 +224,7 @@ int main(int argc, char *argv[])
     /* 事件循环 */
     struct epoll_event events[MAX_EVENTS+1];
 
-	printf("server running:port[%d]\n", port);
+    printf("server running:port[%d]\n", port);
     int checkpos = 0, i;
     while (1) {
         /* 超时验证，每次测试100个链接，不测试listenfd 当客户端60秒内没有和服务器通信，则关闭此客户端链接 */
