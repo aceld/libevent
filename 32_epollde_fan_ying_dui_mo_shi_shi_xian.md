@@ -3,10 +3,7 @@
 >epoll反应堆模式的实现-也就是libevent的实现原理。
 
 
-
-
-
-```cpp
+```go
 /**
  * @brief epoll基于非阻塞I/O事件驱动
  */
@@ -265,5 +262,4 @@ int main(int argc, char *argv[])
     /* 退出前释放所有资源 */
     return 0;
 }
-
 ```
