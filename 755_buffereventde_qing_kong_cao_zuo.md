@@ -1,4 +1,4 @@
-# 7.5.5 bufferevent的清空操作
+# 7.5.4 bufferevent的清空操作
 
 ```cpp
 int bufferevent_flush(struct bufferevent *bufev,
