@@ -29,6 +29,7 @@
    * [6.4 检查事件状态](64_jian_cha_shi_jian_zhuang_tai.md)
    * [6.5 一次触发事件](65_yi_ci_hong_fa_shi_jian.md)
    * [6.6 手动激活事件](66_shou_dong_ji_huo_shi_jian.md)
+   * 6.7 事件状态之间的转换
 * [7 数据缓冲Bufferevent](7_bufferevent.md)
    * [7.1 回调和水位](71_hui_diao_he_shui_wei.md)
    * [7.2 延迟回调](72_yan_chi_hui_diao.md)
