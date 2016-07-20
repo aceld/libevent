@@ -39,7 +39,6 @@
        * [7.5.1 释放bufferevent操作](751_shi_fang_bufferevent_cao_zuo.md)
        * [7.5.2 操作回调、水位和启用/禁用](752_cao_zuo_hui_diao_3001_shui_wei_he_qi_7528_jin_.md)
        * [7.5.3 操作bufferevent中的数据](753_cao_zuo_bufferevent_zhong_de_shu_ju.md)
-       * [7.5.4 读写超时](754_du_xie_chao_shi.md)
        * [7.5.5 bufferevent的清空操作](755_buffereventde_qing_kong_cao_zuo.md)
 * [8 数据封装evBuffer](8_evbuffer.md)
    * [8.1 创建和释放evbuffer](81_chuang_jian_he_shi_fang_evbuffer.md)
