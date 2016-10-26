@@ -39,6 +39,15 @@ make
 sudo make install
 ```
 
+>注意
+>
+如果在libevent安装目录make之后会生成一个.libs/， 里面如果没有libevent_openssl.so说明系统没有安装openssl库。
+但是如果安装了，依然没有这个文件生成，可能需要制定openssl路径
+
+```bash
+ln -s  /usr/local/ssl/include/openssl    /usr/include/openssl  
+```
+
 
 #1.3 libevent开源包
 
