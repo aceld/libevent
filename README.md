@@ -10,6 +10,8 @@
 >
 > 邮箱：danbing\_at@163.com
 
+![](/assets/libevent深入浅出封面.jpg)
+
 ---
 # 目录
 
