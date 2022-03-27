@@ -7,6 +7,9 @@ typedef void (*evconnlistener_errorcb)(struct evconnlistener *lis, void *ptr);
 void evconnlistener_set_error_cb(struct evconnlistener *lev,
     evconnlistener_errorcb errorcb);
 ```
+wqs
+
+
 
 如果使用 evconnlistener_set_error_cb() 为监听器设置了错误回调函数,则监听器发生错误 时回调函数就会被调用。
 
