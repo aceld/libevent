@@ -6,8 +6,7 @@ size_t evbuffer_get_length(const struct evbuffer *buf);
 ```
 
 ```cpp
-int evbuffer_add(struct evbuffer *buf, 
-              const void *data, size_t datlen);
+size_t evbuffer_get_contiguous_space(const struct evbuffer *buf);
 //这个函数返回连续地存储在 evbuffer前面的字节数。
 //evbuffer中的数据可能存储在多个分隔开的内存块中,
 //这个函数返回当前第一个块中的字节数。
