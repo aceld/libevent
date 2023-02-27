@@ -80,8 +80,22 @@
    * [10.3 回显服务器](102_hui_xian_fu_wu_qi.md)
    * [10.3 libevent实现http服务器](103_libeventshi_xian_http_fu_wu_qi.md)
    * 10.4 libevent实现TCP/IP服务器
+   
+   ---
+### About the author
 
+`name`：`Aceld(刘丹冰)`
 
+`mail`:
+[danbing.at@gmail.com](mailto:danbing.at@gmail.com)
 
+`github`:
+[https://github.com/aceld](https://github.com/aceld)
 
+`原创技术文章作品`:
+[https://www.yuque.com/aceld](https://www.yuque.com/aceld)
 
+### 技术讨论社区
+|  **WeChat**   | **WeChat Public Account**  | **QQ Group**  |
+|  ----  | ----  | ----  |
+| <img src="https://s1.ax1x.com/2020/07/07/UF6rNV.png" width = "150" height = "180" alt="" align=center />  | <img src="https://s1.ax1x.com/2020/07/07/UFyUdx.th.jpg" height = "150"  alt="" align=center /> | <img src="https://s1.ax1x.com/2020/07/07/UF6Y9S.th.png" width = "150" height = "150" alt="" align=center /> |
