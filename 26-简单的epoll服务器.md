@@ -179,7 +179,7 @@ void setnoblocking(int fd)
     int opts = 0;
     opts = fcntl(fd, F_GETFL);
     opts = opts | O_NONBLOCK;
-    fcntl(fd, F_SETFL);
+    fcntl(fd, F_SETFL, opts);
 }
 
 int main(int argc, char **argv)
